@@ -1,0 +1,46 @@
+
+main{
+    background: linear-gradient(#fdbb2d, #e66465, #9198e5);
+    padding: 2px 10px;
+    width: 350px;
+    border: #22c1c3 double 2px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+section{
+    text-align: center;
+}
+
+img{
+    width: 310px;
+    
+}
+#SignUp{
+    text-align: left;
+}
+
+legend{
+    border: 3.5px solid #eeaeca;
+    background-color: #94bbe9;
+    border-radius: 20px;
+    text-align: center;
+}
+input{
+    
+    text-align: center;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+    /* margin: 10px 0px; */
+    padding: 2px 10px;
+    background-color: #00d5ff60;
+    width: 350px;
+    border: #1254555e double 2px;
+    border-top: 0c;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
