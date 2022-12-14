@@ -1,0 +1,54 @@
+:root{
+   --clr-1: #D55B3E;
+   --clr-2: #00AAA0;
+   --clr-3: #8ED2C9;
+   --clr-4: #FCF4D9;
+   --clr-5: #5BE7A9;
+   --clr-6: #F8FE85;
+   --clr-7: #B6E2A1;
+   --clr-8: #FFFBC1;
+}
+
+*{
+   box-sizing: border-box;
+}
+body{
+   background-color: var(--clr-2);
+   margin: 0;
+   overflow: hidden;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.set{
+   margin: 20px;
+   display: inline;
+}
+.drum{
+   color: var(--clr-8);
+   width: 50px;
+   height: 50px;
+   background-color: var(--clr-1);
+   border: none;
+   border-radius: 8px;
+   box-shadow: 2px 2px 4px gray, -2px -2px 4px gray;
+   cursor: pointer;
+   font-size: 1.2em;
+   transition: all .5s ease;
+   margin: 5px;
+}
+.drum:active{
+   transform: scale(.99, .99);
+   animation: btn .3s infinite;
+}
+.drum:focus{
+   outline: none;
+   background: linear-gradient(rgba(246, 255, 0, 0.2), rgba(246, 255, 0, 0.2), rgba(246, 255, 0, 0.2)) no-repeat;
+   box-shadow: 2px 2px 4px rgba(0,0,0,0.4), -2px -2px 4px rgba(0,0,0,0.4);
+}
+@keyframes btn{
+   0%{
+      box-shadow: 0 0 0 5px var(--clr-7);
+   }
+}

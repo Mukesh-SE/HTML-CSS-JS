@@ -1,0 +1,80 @@
+:root{
+   --bg-nms-clor: white;
+   --bg-clr: #46C2CB;
+}
+
+*{
+   box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   background-color: var(--bg-clr);
+}
+
+.container{
+   display: flex;
+   position: relative;
+}
+
+.dice{
+   width: 200px;
+   height: 200px;
+   background-color: #678983;
+   text-align: center;
+   position: absolute;
+   border-radius: 7px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+   color: white;
+   margin-left: -50px;
+}
+#dice-box-1{
+   top: -100px;
+   left: -200px;
+   
+}
+#dice-box-2{
+   top: -100px;
+   right: -200px;
+}
+
+
+.diceBox{
+   position: absolute;
+   width: 140px;
+   height: 140px;
+   background-color: green;
+   margin: 30px;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   place-content: start;
+
+   padding: auto;
+   padding-top: 10px;
+
+   border-radius: 5px;
+   box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.5), -3px -3px 3px 3px rgba(255, 255, 255, 0.5);
+}
+
+.num{
+   width: 25px;
+   height: 25px;
+   margin: 5px;
+   background-color: var(--bg-nms-clor);
+   margin-bottom: 12px;
+   margin-left: 30px;
+
+
+   border-radius: 100%;
+}
+h3{
+   position: absolute;
+   text-align: center;
+   bottom: 150px;
+   left: -50px;
+}
